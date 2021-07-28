@@ -15,7 +15,7 @@ const Projects = () => {
       <div className={styles.base}>
         <a
           className={styles.photo}
-          href="https://www.w3schools.com/"
+          href="https://inbetween.surge.sh/"
           target="_blank"
         >
           <Image src={inbetween} />
@@ -28,7 +28,7 @@ const Projects = () => {
             between the faced up cards.
           </p>
           <h4>TOOLS</h4>
-          <p>HTML, CSS, Javascript</p>
+          <p className={styles.text}>HTML, CSS, Javascript</p>
         </div>
       </div>
     </>
