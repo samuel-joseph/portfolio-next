@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import About from "./About";
 import Resume from "./Resume";
 import Projects from "./Projects";
+import Contact from "./Contact";
 import {
   AiOutlineHome,
   // GiGamepad,
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
       <About />
       <Resume />
       <Projects />
+      <Contact />
       <div className={styles.container}>
         <main className={styles.main}>{children}</main>
       </div>

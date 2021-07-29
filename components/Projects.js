@@ -13,13 +13,9 @@ const Projects = () => {
         <p className={styles.textTitle}>PROJECTS</p>
       </div>
       <div className={styles.base}>
-        <a
-          className={styles.photo}
-          href="https://inbetween.surge.sh/"
-          target="_blank"
-        >
-          <Image src={inbetween} />
-        </a>
+        <Link className={styles.photo} href="https://inbetween.surge.sh/">
+          <Image src={inbetween} alt="Card game" />
+        </Link>
         <div className={styles.textContainer}>
           <h3>INBETWEEN</h3>
           <p className={styles.text}>
