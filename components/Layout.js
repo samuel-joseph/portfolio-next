@@ -19,9 +19,9 @@ const Layout = ({ children }) => {
       <Resume />
       <Projects />
       <Contact />
-      <div className={styles.container}>
+      {/* <div className={styles.container}>
         <main className={styles.main}>{children}</main>
-      </div>
+      </div> */}
     </div>
   );
 };

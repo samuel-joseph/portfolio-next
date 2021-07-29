@@ -5,7 +5,6 @@ import styles from "../styles/Layout.module.css";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <h1>HELLO WORLD!</h1>
     </div>
   );
 }
