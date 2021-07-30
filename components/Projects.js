@@ -4,13 +4,15 @@ import Link from "next/link";
 import styles from "../styles/Projects.module.css";
 import { AiTwotoneStar } from "react-icons/ai";
 import inbetween from "../public/inbetween.jpg";
+import NavBar from "./NavBar";
 
 const Projects = () => {
   return (
     <>
-      <div className={styles.main}>
+      <div id="projects" className={styles.main}>
         <AiTwotoneStar className={styles.icon} />
         <p className={styles.textTitle}>PROJECTS</p>
+        <NavBar />
       </div>
       <div className={styles.base}>
         <Link className={styles.photo} href="https://inbetween.surge.sh/">

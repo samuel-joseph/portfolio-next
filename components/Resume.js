@@ -13,15 +13,17 @@ import nodeJs from "../public/skills/node-js.png";
 import reactLogo from "../public/skills/react.png";
 import sequelize from "../public/skills/sequelize.png";
 import visualStudio from "../public/skills/visualstudio.png";
+import NavBar from "./NavBar";
 
 const Resume = () => {
   return (
     <>
-      <div className={styles.main}>
+      <div id="resume" className={styles.main}>
         <Link href="/resume_samuel.docx">
           <AiTwotoneFilePpt className={styles.icon} />
         </Link>
         <p className={styles.text}>RESUME</p>
+        <NavBar />
       </div>
       <div className={styles.headContainer}>
         <h1 className={styles.skill}>SKILLS</h1>
@@ -64,7 +66,7 @@ const Resume = () => {
           <p className={styles.logoText}>VISUAL STUDIO</p>
         </div>
       </div>
-      
+
       <div className={styles.base}>
         <p className={styles.text1}>Click the button to download my resume </p>
         <Link href="/resume_samuel.docx">

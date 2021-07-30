@@ -1,5 +1,4 @@
 .main {
-  border-style: solid;
   padding: 1.5rem 0;
   flex: 1;
   display: flex;
@@ -13,5 +12,9 @@
 .icon {
   margin: 1.5% 10%;
   height: auto;
-  width: 10%;
+  width: 100%;
+}
+
+.withinIcon{
+  width: 100%;
 }

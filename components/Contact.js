@@ -1,20 +1,21 @@
 import React from "react";
 import styles from "../styles/Contact.module.css";
-import Link from "next/link";
+import NavBar from "./NavBar";
 import {
   AiTwotonePhone,
   AiFillGithub,
   AiFillLinkedin,
   AiTwotoneHome,
 } from "react-icons/ai";
-import emailjs from "emailjs-com";
+import { Link } from "react-scroll";
 
 const Contact = () => {
   return (
     <>
-      <div className={styles.main}>
+      <div id="contact" className={styles.main}>
         <AiTwotonePhone className={styles.icon} />
         <p className={styles.text}>CONTACT</p>
+        <NavBar />
       </div>
       <div className={styles.base}>
         <div>
@@ -23,17 +24,23 @@ const Contact = () => {
           <h5>Email Address: pinangaydev@gmail.com</h5>
         </div>
         <div className={styles.logo}>
-          <Link href="http://github.com/samuel-joseph">
+          <a href="http://github.com/samuel-joseph">
             <AiFillGithub className={styles.icon1} />
-          </Link>
-          <Link href="https://www.linkedin.com/in/techjoe/">
+          </a>
+          <a href="https://www.linkedin.com/in/techjoe/">
             <AiFillLinkedin className={styles.icon1} />
-          </Link>
+          </a>
         </div>
       </div>
-      <div className={styles.main}>
+      <Link
+        className={styles.main}
+        activeClass="active"
+        to="home"
+        spy={true}
+        smooth={true}
+      >
         <AiTwotoneHome className={styles.icon} />
-      </div>
+      </Link>
     </>
   );
 };
