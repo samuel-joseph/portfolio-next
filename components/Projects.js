@@ -17,13 +17,13 @@ const Projects = () => {
           <Image src={inbetween} alt="Card game" />
         </Link>
         <div className={styles.textContainer}>
-          <h3>INBETWEEN</h3>
+          <h2>INBETWEEN</h2>
           <p className={styles.text}>
             This is a betting card game that is popular in the Philippines
             wherein a player have to guess if the folded cards value is in
             between the faced up cards.
           </p>
-          <h4>TOOLS</h4>
+          <h3>TOOLS</h3>
           <p className={styles.text}>HTML, CSS, Javascript</p>
         </div>
       </div>
