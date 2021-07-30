@@ -4,7 +4,7 @@ import styles from "../styles/Resume.module.css";
 import { AiTwotoneFilePpt } from "react-icons/ai";
 import Image from "next/image";
 
-import github from "../public/skills/github.png";
+import git from "../public/skills/git.png";
 import html5 from "../public/skills/html5.png";
 import java from "../public/skills/java.png";
 import javascript from "../public/skills/javascript.png";
@@ -22,6 +22,9 @@ const Resume = () => {
           <AiTwotoneFilePpt className={styles.icon} />
         </Link>
         <p className={styles.text}>RESUME</p>
+      </div>
+      <div className={styles.headContainer}>
+        <h1 className={styles.skill}>SKILLS</h1>
       </div>
       <div className={styles.containAll}>
         <div className={styles.skillContainer}>
@@ -53,14 +56,15 @@ const Resume = () => {
           <p className={styles.logoText}>MYSQL</p>
         </div>
         <div className={styles.skillContainer}>
-          <Image className={styles.imageContainer} src={github} />
-          <p className={styles.logoText}>GITHUB</p>
+          <Image className={styles.imageContainer} src={git} />
+          <p className={styles.logoText}>GIT</p>
         </div>
         <div className={styles.skillContainer}>
           <Image className={styles.imageContainer} src={visualStudio} />
           <p className={styles.logoText}>VISUAL STUDIO</p>
         </div>
       </div>
+      
       <div className={styles.base}>
         <p className={styles.text1}>Click the button to download my resume </p>
         <Link href="/resume_samuel.docx">

@@ -21,6 +21,7 @@
   margin-bottom: 0;
   font-weight: bolder;
   font-size: 3vmax;
+  padding-top: 5%;
 }
 
 .text2 {
@@ -37,6 +38,8 @@
   margin-left: 10%;
   margin-right: 10%;
   max-width: max-content;
+  padding: 0 15%;
+  text-align: center;
 }
 
 .text3 {
@@ -44,10 +47,18 @@
   display: inline-block;
   width: 100%;
   margin-top: 0;
-  font-size: 1vmax;
+  font-size: 2vmax;
   margin-bottom: 2vmax;
+  font-weight: lighter;
+  text-align: justify;
 }
 
 .photo {
   border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .container2 {
+    padding: 0 0;
+  }
 }

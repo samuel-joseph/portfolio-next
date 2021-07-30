@@ -21,8 +21,9 @@
 .base {
   display: flex;
   flex: 2;
-  margin: 10% 15%;
-  border-style: solid white;
+  margin: 20% 10% 10% 10%;
+  border: solid 2px white;
+  padding: 5% 5%;
 }
 
 .text1 {
@@ -36,4 +37,52 @@
   font-weight: bolder;
   font-size: larger;
   font-stretch: wider;
+}
+
+.containAll {
+  display: grid;
+  margin: 5% 10%;
+  grid-template-columns: 15% 15% 15%;
+  grid-template-rows: auto auto auto;
+  row-gap: 10%;
+  column-gap: 25%;
+  justify-self: center;
+}
+
+.skillContainer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  justify-self: center;
+  place-self: center stretch;
+}
+
+.logoText {
+  color: white;
+  font-size: small;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.skill {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2% 5%;
+  font-size: 80px;
+  letter-spacing: 3rem;
+}
+
+@media (max-width: 600px) {
+  .containAll {
+    grid-template-columns: 45% 45%;
+    column-gap: 5%;
+    row-gap: 2%;
+  }
+  .skill {
+    font-size: xx-large;
+    letter-spacing: 1rem;
+    padding: 5% 5%;
+  }
 }

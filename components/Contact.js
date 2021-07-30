@@ -10,28 +10,6 @@ import {
 import emailjs from "emailjs-com";
 
 const Contact = () => {
-  function sendEmail(e) {
-    console.log("TEST!");
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "gmail",
-        "template_iq6mal4",
-        e.target,
-        "user_uhOFWfKi1KHKe4V5omtIb"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  }
-
   return (
     <>
       <div className={styles.main}>
